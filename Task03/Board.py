@@ -9,11 +9,13 @@ class Board:
             self.__cells.append(Cell(i))
 
     def __str__(self):
-        res = ""
-        for i in range(9):
-            if i % 3 == 0:
-                res += "\n\r"
-            res += self.__cells[i].__str__()
+        res = f"┌───┬───┬───┐\n\r"
+        res += f"│ {self.__cells[0].__str__()} │ {self.__cells[1].__str__()} │ {self.__cells[2].__str__()} │\n\r"
+        res += f"├───┼───┼───┤\n\r"
+        res += f"│ {self.__cells[3].__str__()} │ {self.__cells[4].__str__()} │ {self.__cells[5].__str__()} │\n\r"
+        res += f"├───┼───┼───┤\n\r"
+        res += f"│ {self.__cells[6].__str__()} │ {self.__cells[7].__str__()} │ {self.__cells[8].__str__()} │\n\r"
+        res += f"└───┴───┴───┘\n\r"
         return res
 
     def set(self, num: int, symbol: str) -> bool:
@@ -25,6 +27,22 @@ class Board:
         if c.is_set:
             return False
         c.symbol = symbol
+        return True
 
-    def check(self):
-        pass
+    def check(self) -> bool:
+        for i in range(3):
+            if self.__cells[3 * i].symbol == self.__cells[3 * i + 1].symbol == self.__cells[3 * i + 2].symbol != Cell.BLANK_SYMBOL:
+                return True
+            if self.__cells[i].symbol == self.__cells[i + 3].symbol == self.__cells[i + 6].symbol != Cell.BLANK_SYMBOL:
+                return True
+        if self.__cells[0].symbol == self.__cells[4].symbol == self.__cells[8].symbol != Cell.BLANK_SYMBOL:
+            return True
+        if self.__cells[2].symbol == self.__cells[4].symbol == self.__cells[6].symbol != Cell.BLANK_SYMBOL:
+            return True
+        return False
+
+    def clear(self):
+        for i in range(9):
+            self.__cells[i].is_set = False
+
+

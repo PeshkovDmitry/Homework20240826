@@ -1,1 +1,1 @@
-__all__ = ["Cell", "Board"]
+__all__ = ["Cell", "Board", "Player", "Game"]
