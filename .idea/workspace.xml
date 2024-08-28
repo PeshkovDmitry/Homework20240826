@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f4e706c-4e19-4744-8721-708e993551dc" name="Changes" comment="Сделал задание 3">
+    <list default="true" id="3f4e706c-4e19-4744-8721-708e993551dc" name="Changes" comment="Переименовал методы в задании 3">
+      <change afterPath="$PROJECT_DIR$/Task04/Animal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task04/AnimalFactory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task04/Bird.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task04/Fish.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task04/Mammal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Task04/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Task04.py" beforeDir="false" afterPath="$PROJECT_DIR$/Task04.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,16 +52,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Python.Task01.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Task02.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Task03.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.Task01.executor": "Run",
+    "Python.Task02.executor": "Run",
+    "Python.Task03.executor": "Run",
+    "Python.Task04.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/dmitry/PycharmProjects/Homework20240826/Task04"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Task04" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -103,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724833256184</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Переименовал методы в задании 3">
+      <option name="closed" value="true" />
+      <created>1724836078951</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1724836078951</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -112,6 +134,7 @@
     <MESSAGE value="Решено задание 2" />
     <MESSAGE value="Прорабатываю задание 3" />
     <MESSAGE value="Сделал задание 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделал задание 3" />
+    <MESSAGE value="Переименовал методы в задании 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Переименовал методы в задании 3" />
   </component>
 </project>
