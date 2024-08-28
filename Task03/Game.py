@@ -10,8 +10,8 @@ class Game:
         self.__player_1 = Player(name_1, Cell.CROSS_SYMBOL, self.__board)
         self.__player_2 = Player(name_2, Cell.ZERO_SYMBOL, self.__board)
 
-    def __new_game(self):
-        self.__board.clear()
+    def __play_one_game(self):
+        self.__board.reset_board()
         while True:
             if self.__make_step(self.__player_1) or self.__make_step(self.__player_2):
                 break
@@ -23,9 +23,9 @@ class Game:
         print(self.__board)
         return res
 
-    def start(self):
+    def start_games(self):
         while True:
-            self.__new_game()
+            self.__play_one_game()
             ans = input("Продолжаем (y/n)")
             if ans == "n":
                 break

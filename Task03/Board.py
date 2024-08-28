@@ -29,7 +29,7 @@ class Board:
         c.symbol = symbol
         return True
 
-    def check(self) -> bool:
+    def check_game_over(self) -> bool:
         for i in range(3):
             if self.__cells[3 * i].symbol == self.__cells[3 * i + 1].symbol == self.__cells[3 * i + 2].symbol != Cell.BLANK_SYMBOL:
                 return True
@@ -41,7 +41,7 @@ class Board:
             return True
         return False
 
-    def clear(self):
+    def reset_board(self):
         for i in range(9):
             self.__cells[i].is_set = False
 

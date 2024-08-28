@@ -25,7 +25,7 @@ class Player:
             num = randint(0, 8)
             if self.__board.set(num, self.__symbol):
                 break
-        if self.__board.check():
+        if self.__board.check_game_over():
             self.__count += 1
             print(f"{self.__name} победил!")
             return True
